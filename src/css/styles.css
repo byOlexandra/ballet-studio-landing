@@ -10,4 +10,5 @@
 @import url('./container.css');
 
 /* Sections style */
+@import url('./partials.css/registration.css')
 

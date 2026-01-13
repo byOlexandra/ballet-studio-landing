@@ -18,8 +18,13 @@ body {
   margin: 0;
 }
 
-h1, h2 {
+h1, h2, h3, h4, h5 {
   font-family: var(--font-accent);
+  font-weight: 400;
+}
+
+h1, h2 {
+  font-weight: 600;
 }
 
 main {
@@ -28,4 +33,9 @@ main {
 
 main:has(.back-link) {
   text-align: center;
+}
+
+#section-line {
+  width: 90%;
+  margin: 0 auto;
 }
