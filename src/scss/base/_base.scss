@@ -1,25 +1,35 @@
+@use '../utils/variables' as *;
+
 :root {
-  --font-main: 'Rethink Sans', sans-serif;
-  --font-accent: 'Playfair Display', serif; 
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
 
-  color: #242424;
-  background-color: #EFE6EB;
+  --text-color: #{$light-text};
+  --bg-color: #{$light-bg};
+}
+
+[data-theme="dark"] {
+  --bg-color: #{$dark-bg};
+  --text-color: #{$dark-text};
 }
 
 body {
-  font-family: var(--font-main);
+  font-family: $font-main;
   display: flex;
   flex-direction: column;
   min-width: 100vw;
   min-height: 100vh;
   margin: 0;
+
+  color: var(--text-color);
+  background-color: var(--bg-color);
+
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: var(--font-accent);
+  font-family: $font-accent;
   font-weight: 400;
 }
 

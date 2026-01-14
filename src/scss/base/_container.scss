@@ -1,0 +1,18 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+
+.container {
+  min-width: 320px;
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 20px;
+
+  @include mq($tablet) {
+    max-width: 768px;
+  }
+
+  @include mq($desktop) {
+    max-width: 1440px;
+  }
+}
+

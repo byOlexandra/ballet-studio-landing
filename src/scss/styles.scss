@@ -1,14 +1,16 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* Common styles */
-@import url('./reset.scss');
-@import url('./base.scss');
-@import url('./container.scss');
 
-/* Sections style */
-@import url('./partials.css/registration.scss')
+// Global
+@use './utils/variables' as *;
+@use './utils/mixins' as *;
+
+// Common styles
+@use './base/fonts' as *;
+@use './base/base' as *;
+@use './base/container' as *;
+@use './base/reset' as *;
+
+// Sections style 
+@use './components/registration' as *;
+@use './components/news' as *;
+
 
