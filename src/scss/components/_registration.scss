@@ -4,7 +4,7 @@
 .registr {
     &__title {
         font-size: 36px;
-        margin-bottom: 80px;
+        @include inner-margin;
     }
 
     &__second-box  {
@@ -22,7 +22,6 @@
 
         &__title {
             font-size: 64px;
-            margin-bottom: 120px;
         }
 
         &__second-box {
@@ -35,11 +34,6 @@
             margin-top: 20px;
             font-size: 32px;
             width: 275px;
-        }
-
-        &__title {
-            font-size: 64px;
-            margin-bottom: 208px;
         }
 
         display: flex;

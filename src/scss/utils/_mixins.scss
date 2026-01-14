@@ -1,5 +1,19 @@
+@use './variables' as *;
+
 @mixin mq($breakpont) {
     @media only screen and (min-width: $breakpont) {
         @content;
+    }
+}
+
+@mixin inner-margin {
+    margin-bottom: 80px;
+
+    @include mq($tablet) {
+        margin-bottom: 120px;
+    }
+
+    @include mq($desktop) {
+        margin-bottom: 208px;
     }
 }

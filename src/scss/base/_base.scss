@@ -19,9 +19,11 @@ body {
   font-family: $font-main;
   display: flex;
   flex-direction: column;
-  min-width: 100vw;
   min-height: 100vh;
-  margin: 0;
+  margin: 0 auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-gutter: stable;
 
   color: var(--text-color);
   background-color: var(--bg-color);
