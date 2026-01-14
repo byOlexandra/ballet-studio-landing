@@ -22,8 +22,19 @@
         }
     }
 
+    &__text {
+        @include mq($desktop) {
+            font-size: 18px;        
+        }        
+    }
+
+    @include mq($tablet) {
+        display: flex;
+        flex-direction: column;
+    }
+
     @include mq($desktop) {
-        margin-left: 324px;
+        margin-left: 21%;
     }
 
 }
