@@ -1,0 +1,48 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+
+.registr {
+    &__title {
+        font-size: 36px;
+        @include inner-margin;
+    }
+
+    &__second-box  {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    
+        width: 335px;
+    }
+
+    @include mq($tablet) {
+        &__subtitle {
+            font-size: 24px;
+        }
+
+        &__title {
+            font-size: 64px;
+        }
+
+        &__second-box {
+            width: 380px;
+        }
+    }
+
+    @include mq($desktop) {
+        &__subtitle {
+            margin-top: 20px;
+            font-size: 32px;
+            width: 275px;
+        }
+
+        &__description {
+            font-size: 18px;
+        }
+
+        display: flex;
+        gap: 20px;
+    }
+
+}
+

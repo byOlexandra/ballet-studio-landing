@@ -1,0 +1,60 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+
+:root {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+
+  --text-color: #{$light-text};
+  --bg-color: #{$light-bg};
+}
+
+[data-theme="dark"] {
+  --bg-color: #{$dark-bg};
+  --text-color: #{$dark-text};
+}
+
+body {
+  font-family: $font-main;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0 auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-gutter: stable;
+
+  color: var(--text-color);
+  background-color: var(--bg-color);
+
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: $font-accent;
+  font-weight: 400;
+}
+
+h1, h2 {
+  font-weight: 600;
+}
+
+main {
+  flex-grow: 1;
+}
+
+main:has(.back-link) {
+  text-align: center;
+}
+
+#section-line {
+  width: 90%;
+  margin: 0 auto;
+  border: none;
+  border-top: 2px solid var(--text-color);
+  
+  @include mq($tablet) {
+    width: 97%;
+  }
+}

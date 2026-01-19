@@ -1,0 +1,19 @@
+
+// Global
+@use './utils/variables' as *;
+@use './utils/mixins' as *;
+
+// Common styles
+@use './base/fonts' as *;
+@use './base/base' as *;
+@use './base/container' as *;
+@use './base/reset' as *;
+
+// Sections style 
+@use './components/registration' as *;
+@use './components/news' as *;
+
+// Components 
+@use './components/button' as *;
+
+

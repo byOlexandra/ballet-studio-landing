@@ -1,0 +1,23 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+
+.btn {
+    height: 43px;
+    width: 122px;
+    
+    border-radius: 2px;
+    border-width: 1px;
+    border-style: solid;
+
+    transition: all 0.3s ease;
+
+    &__primary {
+        background-color: transparent;
+        border-color: $border-clr;
+
+        &:hover {
+            box-shadow: $shadow-soft;
+            transform: translateY(-2px);
+        }
+    }
+}
