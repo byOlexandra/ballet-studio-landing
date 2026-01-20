@@ -9,31 +9,14 @@
   <link rel="stylesheet" href="./scss/styles.scss" />
 </head>
 
-<body>
-  <header>
-    <div id="aboutModal" class="modal"
-      style="display: none; position: fixed; inset: 0; background: rgba(229, 218, 219, 0.98); z-index: 1000; align-items: center; justify-content: center;">
-      <div class="modal__content" style="max-width: 600px; padding: 2rem; position: relative;">
-        <span class="close-btn"
-          style="position: absolute; top: -2rem; right: 0; cursor: pointer; text-transform: uppercase; font-size: .8rem;">[
-          close ]</span>
-        <h2 class="large-title" style="font-size: 3rem; margin-bottom: 2rem;">About the Studio</h2>
-        <p style="font-style: italic; line-height: 1.6;">Founded with a passion for classical movement, Rhythm Ballet
-          provides a sanctuary for dancers to refine their craft under expert guidance.</p>
-      </div>
-    </div>
-  </header>
-  <main>
-    <load src="/partials/hero.html" />
-    <load src="/partials/curriculum.html" />
-    <load src="/partials/instructions.html" />
-    <load src="/partials/showcase.html" />
-    <load src="/partials/registration.html" />
-    <load src="/partials/news.html" />
-  </main>
-  <footer></footer>
-
-  <script type="module" src="./main.ts"></script>
-</body>
-
-</html>
+<header><load src="./partials/header.html" /></header>
+<main>
+  <load src="./partials/hero.html" />
+  <load src="./partials/curriculum.html" />
+  <load src="./partials/instructions.html" />
+  <load src="./partials/showcase.html" />
+  <load src="./partials/registration.html" />
+  <load src="./partials/news.html" />
+</main>
+<footer><load src="./partials/footer.html" /></footer>
+<load src="./partials/about-modal.html" /> 
