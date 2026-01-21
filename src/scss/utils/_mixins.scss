@@ -17,3 +17,9 @@
         margin-bottom: 208px;
     }
 }
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
