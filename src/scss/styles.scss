@@ -1,4 +1,3 @@
-
 // Global
 @use './utils/variables' as *;
 @use './utils/mixins' as *;
@@ -16,4 +15,8 @@
 // Components 
 @use './components/button' as *;
 
-
+@use "./components/hero" as *;
+@use "./components/curriculum" as *;
+@use "./components/about-modal" as *;
+@use "./components/showcase.scss" as *;
+@use "./components/hero" as*;

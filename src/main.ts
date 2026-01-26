@@ -1,5 +1,7 @@
-import { setRegistrationYear } from "./ts/registration";
+import { setRegistrationYear } from './ts/registration';
+import { initAboutModal } from './ts/about-modal';
 
 document.addEventListener('DOMContentLoaded', () => {
-    setRegistrationYear()
-})
+  setRegistrationYear();
+  initAboutModal();
+});
