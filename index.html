@@ -1,17 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/ballet-studio-landing/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Classic Dance Studio</title>
-    <script type="module" crossorigin src="/ballet-studio-landing/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/ballet-studio-landing/assets/index-h0Rimq_t.css">
-  </head>
-  <body>
-    <header></header>
-    <main>
-      <section id="rg-section">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/ballet-studio-landing/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Classic Dance Studio</title>
+  <link rel="stylesheet" crossorigin href="/ballet-studio-landing/assets/index-BanCC1Ah.css">
+</head>
+
+<header><header class="header">
+  <nav class="header__nav">
+    <a href="#" class="header__link">Home</a>
+    <a href="#" class="header__link">Classes</a>
+    <a href="#" class="header__link" id="open-about">About</a>
+  </nav>
+</header></header>
+<main>
+  <section class="hero border-b">
+  <div class="hero__container grid-12">
+    <h1 class="hero__title">Rhythm<br>Ballet</h1>
+    <p class="hero__text">
+      We nurture the future of ballet — a space where movement transcends the ordinary and the pursuit of excellence celebrates every dancer's potential.
+    </p>
+  </div>
+</section>
+  <section class="curriculum grid-12 border-b">
+  <div class="section-info">
+    <h2 class="section-info__title">Our Curriculum</h2>
+    <div class="section-info__desc">
+      <p>Our studio provides a complete ballet education, with classes ranging from foundational technique to advanced repertoire and pointe work.</p>
+      <ul class="section-info__list">
+        <li>Classical ballet technique at all levels</li>
+        <li>Pointe and variations training</li>
+        <li>Character and partnering classes</li>
+        <li>Conditioning and supplemental classes</li>
+      </ul>
+    </div>
+  </div>
+  <div class="section-image border-l">
+    <img src="/img/curriculum.jpg" alt="Ballet Curriculum" class="img-responsive">
+  </div>
+</section>
+  <section class="curriculum grid-12 border-b">
+  <div class="section-info">
+    <h2 class="section-info__title">Our Curriculum</h2>
+    <div class="section-info__desc">
+      <p>Our studio provides a complete ballet education, with classes ranging from foundational technique to advanced repertoire and pointe work.</p>
+      <ul class="section-info__list">
+        <li>Classical ballet technique at all levels</li>
+        <li>Pointe and variations training</li>
+        <li>Character and partnering classes</li>
+        <li>Conditioning and supplemental classes</li>
+      </ul>
+    </div>
+  </div>
+  <div class="section-image border-l">
+    <img src="/img/curriculum.jpg" alt="Ballet Curriculum" class="img-responsive">
+  </div>
+</section>
+  <section class="showcase grid-12 border-b">
+  <div class="section-info">
+    <h2 class="section-info__title">2025 Community Showcase</h2>
+    <div class="section-info__desc">
+      <p>Be inspired at our 2025 Community Showcase. See the culmination of a year's dedication and growth as our students share their passion for dance.</p>
+    </div>
+  </div>
+  <div class="section-image border-l">
+    <img src="/img/showcase.jpg" alt="2025 Showcase" class="img-responsive">
+  </div>
+</section>
+
+<div id="modal-about" class="modal">
+  <div class="modal__overlay"></div>
+  <div class="modal__content">
+    <button class="modal__close" aria-label="Close modal">Close [x]</button>
+    <div class="modal__inner">
+      <h2 class="large-title">About the Studio</h2>
+      <p>Rhythm Ballet is a premier destination for classical dance education. We believe that movement transcends the ordinary and artistry is born from discipline.</p>
+    </div>
+  </div>
+</div>
+  <section id="rg-section">
     <hr id="section-line">
     <div class="container registr">
         <h3 class="registr__subtitle">
@@ -32,7 +102,7 @@
 
     </div>
 </section>
-      <section id="news-section">
+  <section id="news-section">
     <hr id="section-line">
     <div class="container news">
         <h2 class="news__title">Studio News</h2>
@@ -40,13 +110,21 @@
         <div class="news__bottom-box">
             <p class="news__text">Receive insightful articles, training tips, and inspiring stories from our studio. <br>Stay informed about upcoming classes,
             workshops, and performance opportunities.</p>
-            
+
             <button type="button" id="subscribe-btn" class="btn btn__primary">Subscribe</button>
         </div>
     </div>
 </section>
-    </main>
-    <footer></footer>    
-
-  </body>
-</html>
+</main>
+<footer></footer>
+<div id="aboutModal" class="modal">
+    <div class="modal__overlay"></div>
+    <div class="modal__content">
+        <button class="modal__close" id="closeAbout">Close [x]</button>
+        <h2 class="large-title">About the Studio</h2>
+        <p class="modal__text">
+            Founded with a passion for classical movement, Rhythm Ballet provides a sanctuary
+            for dancers to refine their craft under expert guidance.
+        </p>
+    </div>
+</div> 
